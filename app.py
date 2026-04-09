@@ -78,7 +78,7 @@ def send_email():
                       <tr>
                         <!-- Avatar -->
                         <td style="padding-right:16px;vertical-align:top;">
-                          <div style="width:48px;height:48px;border-radius:50%;background-color:#1e3a4a;border:2px solid #38bdf8;display:flex;align-items:center;justify-content:center;text-align:center;line-height:48px;font-size:18px;font-weight:700;color:#38bdf8;font-family:Arial,sans-serif;">
+                          <div style="display:flex;align-items:center;justify-content:center;text-align:center;line-height:48px;font-size:18px;font-weight:700;color:#38bdf8;font-family:Arial,sans-serif;">
                             {full_name[0].upper()}
                           </div>
                         </td>
