@@ -5,7 +5,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 app = Flask(__name__)
-CORS(app)  # Allow React frontend to talk to Flask
+CORS(app, origins="https://personal-website-kenezu17s-projects.vercel.app")
 
 @app.route("/send-email", methods=["POST"])
 def send_email():
