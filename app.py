@@ -7,7 +7,8 @@ from email.mime.text import MIMEText
 app = Flask(__name__)
 CORS(app, origins=[
     "http://localhost:5173",
-    "https://personal-website-kenezu17s-projects.vercel.app"
+    "https://personal-website-kenezu17s-projects.vercel.app",
+    "https://personal-website-eosin-mu.vercel.app"
 ])
 @app.route("/send-email", methods=["POST"])
 def send_email():
