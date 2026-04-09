@@ -57,8 +57,9 @@ def send_email():
     msg["Reply-To"] = email
 
     try:
-        with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 587) as server:
             server.login(sender_email, sender_password)
+            server.starttls()
             server.sendmail(sender_email, receiver_email, msg.as_string())
 
         return jsonify({"message": "Message sent successfully!"})
