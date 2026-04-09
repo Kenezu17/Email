@@ -29,7 +29,7 @@ def send_email():
     try:
         resend.Emails.send({
             "from": "onboarding@resend.dev",
-            "to": "kennethaces011703@gmail.com",
+            "to": "jankennethfumar3@gmail.com",
             "reply_to": email,
             "subject": f"New Message from {full_name} - {subject}",
             "html": f"""
