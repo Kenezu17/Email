@@ -24,7 +24,7 @@ def send_email():
     message = data.get("message")
     full_name = f"{first_name} {last_name}"
 
-    resend.api_key = os.environ.get("re_UNBvdbe8_8Kix2mhb7XxBXpLUNuRK1nzu")
+    resend.api_key = os.environ.get("RESEND_API_KEY")
 
     try:
         resend.Emails.send({
