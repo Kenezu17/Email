@@ -79,7 +79,7 @@ def send_email():
                         <!-- Avatar -->
                         <td style="padding-right:16px;vertical-align:top;">
                           <div style="display:flex;align-items:center;justify-content:center;text-align:center;line-height:48px;font-size:18px;font-weight:700;color:#38bdf8;font-family:Arial,sans-serif;">
-                            {full_name[0].upper()}
+                           
                           </div>
                         </td>
                         <td style="vertical-align:top;">
@@ -115,7 +115,7 @@ def send_email():
                   <td>
                     <p style="margin:0 0 10px;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#4b5563;font-family:Arial,sans-serif;">Message</p>
                     <div style="background-color:#0b0f1a;border:1px solid rgba(255,255,255,0.06);border-left:3px solid #38bdf8;border-radius:8px;padding:16px 18px;">
-                      <p style="margin:0;font-size:14px;color:#9ca3af;line-height:1.8;font-family:'Courier New',monospace;">{message}</p>
+                      <p style="margin:0;font-size:14px;color:#4b5563;line-height:1.8;font-family:Arial,sans-serif;">{message}</p>
                     </div>
                   </td>
                 </tr>
