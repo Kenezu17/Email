@@ -5,8 +5,10 @@ import smtplib
 from email.mime.text import MIMEText
 
 app = Flask(__name__)
-CORS(app, origins="https://personal-website-kenezu17s-projects.vercel.app")
-
+CORS(app, origins=[
+    "http://localhost:5173",
+    "https://personal-website-kenezu17s-projects.vercel.app"
+])
 @app.route("/send-email", methods=["POST"])
 def send_email():
     data = request.json
@@ -38,9 +40,9 @@ def send_email():
     </html>
     """
 
-    sender_email = "jankennethfumar3@gmail.com"         # Your Gmail
-    sender_password = "xhmphxerditnwcis"         # Gmail App Password
-    receiver_email = "jankennethfumar3@gmail.com"       # Where you want messages
+    sender_email = "jankennethfumar3@gmail.com"        
+    sender_password = "xhmphxerditnwcis"       
+    receiver_email = "jankennethfumar3@gmail.com"      
 
     msg = MIMEText(html_content, "html")
     msg["Subject"] = f"New Message from {full_name}"
